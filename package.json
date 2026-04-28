@@ -33,6 +33,7 @@
     "format": "prettier --write .",
     "lint": "prettier --check . && eslint .",
     "package": "svelte-kit sync && svelte-package && publint",
+    "prepare": "npm run package",
     "prepublishOnly": "npm run package",
     "preview": "vite preview",
     "release": "changeset publish",
